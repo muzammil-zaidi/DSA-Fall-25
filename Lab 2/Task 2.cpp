@@ -103,23 +103,23 @@ public:
 };
 
 int main(){
-    DynamicMatrix mat(3,3);
-    mat.fill(7);
+    DynamicMatrix m(3,3);
+    m.fill(7);
 
     cout<<"Original Matrix: \n";
-    mat.print();
+    m.print();
 
-    mat.addToOddIndex(2);
+    m.addToOddIndex(2);
     cout<<"\nMatrix after adding 2 to odd indices: \n";
-    mat.print();
+    m.print();
 
-    mat.resize(4,4,2);
+    m.resize(4,4,2);
     cout<<"\nResized Matrix (4x4): \n";
-    mat.print();
+    m.print();
 
-    mat.transpose();
+    m.transpose();
     cout<<"\nTransposed Matrix: \n";
-    mat.print();
+    m.print();
 
     return 0;
 }
